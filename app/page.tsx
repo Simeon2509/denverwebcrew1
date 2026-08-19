@@ -2,15 +2,15 @@ import Nav from './Nav'
 import ContactForm from './ContactForm'
 
 const SERVICES = [
-  { ic: '🏗️', title: 'Custom Website Build',      body: "A fast, mobile-friendly site designed around your business — not a generic template that looks like everyone else's." },
-  { ic: '📍', title: 'Google & Apple Maps Setup', body: 'We claim and optimize your Google Business Profile and Apple Maps listing so customers can find and navigate to you.' },
-  { ic: '🔍', title: 'Local SEO',                 body: 'On-page optimization so you show up when Denver customers search for what you do, in your neighborhood.' },
-  { ic: '📸', title: 'Professional Photography',  body: 'Storefront, interior, and product photos shot on-site by us — including drone footage when you need it.' },
-  { ic: '⭐', title: 'Review Generation',          body: 'QR codes and a simple in-store system that makes it easy for happy customers to leave you a Google review.' },
-  { ic: '📱', title: 'Social Profile Setup',       body: 'Facebook and Instagram business profiles set up and linked to your new site, with consistent branding.' },
-  { ic: '📧', title: 'Professional Email',         body: 'A real @yourbusiness.com email address instead of a personal Gmail — looks sharper on every invoice and card.' },
-  { ic: '🎨', title: 'Logo & Basic Branding',      body: "Don't have a logo yet? We'll create simple, clean branding — colors, fonts, and a mark you can use everywhere." },
-  { ic: '🛠️', title: 'Hosting & Maintenance',     body: 'We host the site, keep it secure and updated, and fix things fast if something breaks — no monthly guesswork.' },
+  { ic: '💻', title: 'Website Development',                  body: 'A professional, mobile-friendly website that makes it easy for customers to learn about your business, contact you, book services, or make a purchase.' },
+  { ic: '📸', title: 'Photography & Drone Content',          body: 'Professional photos and aerial drone footage of your storefront, interior, products, team, and property — ready to use on your site, Google, social media, and print.' },
+  { ic: '📱', title: 'Social Media Setup & Content',         body: 'We set up and optimize your Instagram, Facebook, TikTok, LinkedIn and more — and create professional photos, videos, and graphics to launch your profiles strong.' },
+  { ic: '📍', title: 'Google Business Profile & Maps',       body: 'We set up and optimize your Google Business Profile so customers can easily find your location, hours, services, photos, and reviews directly on Google and Maps.' },
+  { ic: '🔍', title: 'Local SEO',                            body: 'Improve your visibility when people search Google for your services nearby — through website optimization, local listings, and location-specific content.' },
+  { ic: '🎨', title: 'Branding & Graphic Design',            body: 'Develop your visual identity from the ground up — logo, colors, fonts, brand guidelines, and a consistent look and feel across everything you put out.' },
+  { ic: '📅', title: 'Online Booking & Scheduling',          body: 'Set up an easy online booking system so customers can schedule appointments or services directly from your website, 24/7.' },
+  { ic: '🖨️', title: 'Print & Promotional Materials',       body: 'Turn your brand into physical marketing — business cards, flyers, menus, brochures, signage, postcards, and any other printed materials your business needs.' },
+  { ic: '⭐', title: 'Review & Reputation Management',       body: 'Build a stronger online reputation with review systems, QR codes, monitoring, and professional response strategies that keep your rating climbing.' },
 ]
 
 const STEPS = [
@@ -38,14 +38,14 @@ const FAQS = [
 ]
 
 const ADDONS = [
-  { title: 'Extra photo shoot',              price: '$125',    body: 'Seasonal refresh or a new product/service to feature.' },
-  { title: 'Logo & branding kit',            price: '$175',    body: 'Logo, color palette, and fonts delivered as ready-to-use files.' },
-  { title: 'Professional email setup',       price: '$11/mo',  body: 'Custom @yourbusiness.com inbox, set up and ready to use.' },
-  { title: 'Additional page',                price: '$75',     body: "Add a page beyond your package's included page count." },
-  { title: 'Monthly SEO reporting',          price: '$28/mo',  body: 'Plain-English report on traffic, rankings, and map views.' },
-  { title: 'Rush build (2 weeks)',           price: '$150',    body: 'Move your project to the front of the queue.' },
+  { title: 'Extra photo & drone shoot',      price: '$125',      body: 'Seasonal refresh, new products, or a second location.' },
+  { title: 'Logo & branding kit',            price: '$175',      body: 'Logo, color palette, and fonts delivered as ready-to-use files.' },
+  { title: 'Social media content pack',      price: '$150',      body: '10 professionally designed posts ready to publish across your profiles.' },
+  { title: 'Online booking setup',           price: '$125',      body: 'Add a scheduling system so customers can book directly from your site.' },
+  { title: 'Print materials design',         price: 'from $75',  body: 'Business cards, flyers, menus, or postcards — designed to match your brand.' },
+  { title: 'Additional page',               price: '$75',       body: "Add a page beyond your package's included page count." },
   { title: 'E-commerce / online ordering',  price: 'from $300', body: 'Sell products or take orders directly from your site.' },
-  { title: 'Additional map/listing sync',   price: '$38',     body: 'Bing, Yelp, and other directories kept consistent with your info.' },
+  { title: 'Rush build (2 weeks)',           price: '$150',      body: 'Move your project to the front of the queue.' },
 ]
 
 export default function Home() {
@@ -70,7 +70,7 @@ export default function Home() {
               Websites built <em style={{ fontStyle: 'italic', color: 'var(--sunset-2)' }}>in person</em>, by people who actually show up.
             </h1>
             <p style={{ color: '#c9d4e3', fontSize: '18px', maxWidth: '52ch' }}>
-              We&apos;re not a call center in another time zone. Denver Web Crew meets Denver business owners face to face — we shoot your storefront, build your site, and get you found on Google and Apple Maps.
+              We&apos;re not a call center in another time zone. Denver Web Crew meets Denver business owners face to face — we handle your website, photography, drone footage, Google presence, social media, branding, and more. Everything in one place, done in person.
             </p>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginTop: '28px' }}>
               <a href="#pricing" className="btn btn-primary">See Package Pricing</a>
@@ -109,10 +109,12 @@ export default function Home() {
       <div style={{ background: 'var(--navy-2)', color: '#9fb3cc', padding: '16px 0' }}>
         <div className="wrap" style={{ display: 'flex', gap: '40px', justifyContent: 'center', flexWrap: 'wrap', fontSize: '13px', fontWeight: 600, letterSpacing: '.03em', textTransform: 'uppercase' }}>
           <span>In-Person Consultations</span>
-          <span>Professional Photography</span>
-          <span>Google &amp; Apple Maps Setup</span>
+          <span>Photography &amp; Drone</span>
+          <span>Google &amp; Apple Maps</span>
           <span>Local SEO</span>
-          <span>Ongoing Hosting &amp; Care</span>
+          <span>Social Media Setup</span>
+          <span>Branding &amp; Design</span>
+          <span>Ongoing Care</span>
         </div>
       </div>
 
@@ -121,8 +123,8 @@ export default function Home() {
         <div className="wrap">
           <div className="services-head">
             <div className="eyebrow">What We Do</div>
-            <h2>Everything a local business needs to be found — handled in person</h2>
-            <p>We build the website, then make sure real customers can actually find it. Every project starts with a face-to-face visit to your business, not a form on the internet.</p>
+            <h2>Everything a local business needs to grow — handled in person</h2>
+            <p>From your website and photos to Google, social media, and branding — we handle it all. Every project starts with a face-to-face visit, not a form on the internet.</p>
           </div>
           <div className="grid-services">
             {SERVICES.map(s => (
@@ -263,10 +265,11 @@ export default function Home() {
                 <li>Up to 5 pages</li>
                 <li>In-person consultation</li>
                 <li>Mobile-friendly custom design</li>
-                <li>Google &amp; Apple Maps setup</li>
-                <li>Basic on-page SEO</li>
-                <li className="no">Photography shoot</li>
-                <li className="no">Social profile setup</li>
+                <li>Google Business Profile setup</li>
+                <li>Basic local SEO</li>
+                <li className="no">Photography &amp; drone content</li>
+                <li className="no">Social media setup</li>
+                <li className="no">Branding &amp; logo</li>
               </ul>
               <a href="#contact" className="btn btn-navy" style={{ color: 'var(--navy)', borderColor: 'var(--navy)', background: '#fff', textDecoration: 'none' }}>Get Started</a>
             </div>
@@ -279,11 +282,11 @@ export default function Home() {
               <ul>
                 <li>Up to 8 pages</li>
                 <li>In-person consultation &amp; shoot day</li>
-                <li>Professional photo &amp; video shoot</li>
-                <li>Google &amp; Apple Maps setup</li>
-                <li>Full on-page &amp; local SEO</li>
-                <li>Social profile setup (FB/IG)</li>
-                <li>Review-generation QR system</li>
+                <li>Photography &amp; drone content</li>
+                <li>Google Business Profile &amp; Maps</li>
+                <li>Full local SEO</li>
+                <li>Social media setup (FB/IG/TikTok)</li>
+                <li>Review &amp; reputation setup</li>
               </ul>
               <a href="#contact" className="btn btn-primary" style={{ textDecoration: 'none' }}>Get Started</a>
             </div>
@@ -296,11 +299,11 @@ export default function Home() {
               <ul>
                 <li>Unlimited pages</li>
                 <li>Everything in Growth</li>
-                <li>Logo &amp; basic branding kit</li>
-                <li>Professional business email</li>
-                <li>Monthly SEO &amp; traffic reporting</li>
-                <li>Priority / same-day support</li>
-                <li>Quarterly photo &amp; content refresh</li>
+                <li>Full branding &amp; logo design</li>
+                <li>Online booking &amp; scheduling setup</li>
+                <li>Print &amp; promotional materials</li>
+                <li>Monthly SEO &amp; reputation reporting</li>
+                <li>Priority support &amp; quarterly refresh</li>
               </ul>
               <a href="#contact" className="btn btn-outline" style={{ textDecoration: 'none' }}>Get Started</a>
             </div>
