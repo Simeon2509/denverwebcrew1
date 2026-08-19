@@ -14,9 +14,9 @@ const SERVICES = [
 ]
 
 const STEPS = [
-  { n: 1, title: 'We meet in person',    body: 'A free walkthrough of your business — we talk goals, look at your space, and plan the shoot.' },
-  { n: 2, title: 'We shoot photo & drone', body: 'Ground and aerial footage of your location, product, or storefront on a day that works for you.' },
-  { n: 3, title: 'We design & build',    body: 'Your site is built around your brand and your footage — you review drafts before anything goes live.' },
+  { n: 1, title: 'We meet in person',    body: 'A free walkthrough of your business — we talk goals, look at your space, and figure out exactly what you need.' },
+  { n: 2, title: 'We capture your content', body: 'Photos of your storefront, products, and team — shot on-site so your site looks like your actual business.' },
+  { n: 3, title: 'We design & build',    body: 'Your site is built around your brand and your photos — you review drafts before anything goes live.' },
   { n: 4, title: 'We get you found',     body: 'Google Business Profile, Apple Maps, and local SEO are set up so customers can actually find you.' },
   { n: 5, title: 'We stick around',      body: 'Hosting, updates, and support continue every month — one local point of contact, not a ticket queue.' },
 ]
@@ -54,7 +54,7 @@ export default function Home() {
               Websites built <em style={{ fontStyle: 'italic', color: 'var(--sunset-2)' }}>in person</em>, by people who actually show up.
             </h1>
             <p style={{ color: '#c9d4e3', fontSize: '18px', maxWidth: '52ch' }}>
-              We&apos;re not a call center in another time zone. Denver Web Crew meets Denver business owners face to face — we shoot your storefront (drone included), build your site, and get you found on Google and Apple Maps.
+              We&apos;re not a call center in another time zone. Denver Web Crew meets Denver business owners face to face — we shoot your storefront, build your site, and get you found on Google and Apple Maps.
             </p>
             <div style={{ display: 'flex', gap: '14px', flexWrap: 'wrap', marginTop: '28px' }}>
               <a href="#pricing" className="btn btn-primary">See Package Pricing</a>
@@ -63,7 +63,7 @@ export default function Home() {
             <div style={{ display: 'flex', gap: '22px', marginTop: '44px', flexWrap: 'wrap' }}>
               {[
                 { color: 'var(--sky)',     text: 'Locally owned & operated' },
-                { color: 'var(--sunset)',  text: 'Licensed drone pilot on staff' },
+                { color: 'var(--sunset)',  text: 'No long-term contracts' },
                 { color: 'var(--sunset-2)',text: 'Fixed prices, no surprises' },
               ].map(b => (
                 <div key={b.text} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px', color: '#c9d4e3', fontWeight: 600 }}>
@@ -84,10 +84,10 @@ export default function Home() {
               color: '#8fa6c4', fontSize: '13px', fontWeight: 600,
               border: '1px dashed rgba(255,255,255,.25)', textAlign: 'center', padding: '20px',
             }}>
-              🎥 Drone + ground footage<br />from your actual business
+              📸 Real photos of your business<br />shot on-site by us
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '16px', fontSize: '13px', color: '#a9b9cf' }}>
-              <span>Aerial &amp; storefront shoot</span>
+              <span>Storefront &amp; interior shoot</span>
               <span>Included in Growth &amp; Premium</span>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
       <div style={{ background: 'var(--navy-2)', color: '#9fb3cc', padding: '16px 0' }}>
         <div className="wrap" style={{ display: 'flex', gap: '40px', justifyContent: 'center', flexWrap: 'wrap', fontSize: '13px', fontWeight: 600, letterSpacing: '.03em', textTransform: 'uppercase' }}>
           <span>In-Person Consultations</span>
-          <span>Drone &amp; Ground Photography</span>
+          <span>Professional Photography</span>
           <span>Google &amp; Apple Maps Setup</span>
           <span>Local SEO</span>
           <span>Ongoing Hosting &amp; Care</span>
@@ -154,7 +154,7 @@ export default function Home() {
             <p>Most web design &ldquo;agencies&rdquo; are a name on a website with nobody local behind it. Denver Web Crew is different — we&apos;re based in Denver, and part of every package is sitting down with you in person.</p>
             <ul className="why-list">
               {[
-                'We visit your business to shoot photo and drone footage ourselves — no stock photos.',
+                'We visit your business and shoot photos ourselves — no stock photos, no generic imagery.',
                 'You can call and talk to the person who actually built your site.',
                 'We know the Denver market — what local customers search for and where they look.',
                 'Something breaks? We can be at your business, not just on the phone.',
@@ -264,7 +264,7 @@ export default function Home() {
       <section style={{ padding: '88px 0' }}>
         <div className="wrap">
           <div className="quote-block">
-            <blockquote>&ldquo;They showed up, flew a drone over our shop, and had our new site live in two weeks. We&apos;re finally showing up on Google Maps too.&rdquo;</blockquote>
+            <blockquote>&ldquo;They came to our shop, took photos, and had our new site live in two weeks. We&apos;re finally showing up on Google Maps too.&rdquo;</blockquote>
             <div className="who">— Placeholder testimonial &middot; swap in a real customer quote before launch</div>
           </div>
         </div>
