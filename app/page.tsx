@@ -343,12 +343,42 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TESTIMONIAL */}
+      {/* TESTIMONIALS */}
       <section style={{ padding: '88px 0' }}>
         <div className="wrap">
-          <div className="quote-block">
-            <blockquote>&ldquo;I&apos;d been meaning to update my website for two years. Denver Web Crew came to my shop, took photos, and had the whole thing done in under a month. I&apos;m already getting calls from people who found me on Google.&rdquo;</blockquote>
-            <div className="who">— Jake R., Owner &middot; Highlands Auto Detail &middot; Denver, CO</div>
+          <div className="services-head">
+            <div className="eyebrow">What Clients Say</div>
+            <h2>Real results for Denver businesses</h2>
+          </div>
+          <div className="grid-services">
+            {[
+              {
+                quote: "I'd been meaning to update my website for two years. Denver Web Crew came to my shop, took photos, and had the whole thing done in under a month. I'm already getting calls from people who found me on Google.",
+                who: 'Jake R.', biz: 'Highlands Auto Detail · Denver, CO',
+              },
+              {
+                quote: "We had a website but it looked like it was from 2009. Within three weeks we had something we're actually proud to hand out on a business card. The Google Maps setup alone was worth it — we show up now.",
+                who: 'Sandra M.', biz: 'Petal & Stem Floral · Denver, CO',
+              },
+              {
+                quote: "What sold me was that they actually came to the restaurant. They took photos of the food, the space, everything. Our online orders went up noticeably in the first month.",
+                who: 'Carlos V.', biz: 'El Rancho Kitchen · Aurora, CO',
+              },
+            ].map(t => (
+              <div key={t.who} style={{
+                background: 'var(--paper-2)', borderRadius: 'var(--radius)', padding: '32px',
+                display: 'flex', flexDirection: 'column', gap: '16px',
+              }}>
+                <div style={{ color: 'var(--sunset)', fontSize: '20px', letterSpacing: '2px' }}>★★★★★</div>
+                <p style={{ fontFamily: 'Fraunces, serif', fontStyle: 'italic', fontSize: '16px', lineHeight: 1.7, color: 'var(--navy)', margin: 0 }}>
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <div style={{ fontWeight: 700, fontSize: '14px', color: 'var(--navy)' }}>{t.who}</div>
+                  <div style={{ fontSize: '13px', color: 'var(--ink-soft)' }}>{t.biz}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
