@@ -1,5 +1,6 @@
 import Nav from './Nav'
 import ContactForm from './ContactForm'
+import PackageBuilder from './PackageBuilder'
 
 const SERVICES = [
   { ic: '💻', title: 'Website Development',                  body: 'A professional, mobile-friendly website that makes it easy for customers to learn about your business, contact you, book services, or make a purchase.' },
@@ -254,61 +255,7 @@ export default function Home() {
             <h2 style={{ color: '#fff' }}>Simple, fixed-price packages</h2>
             <p style={{ color: '#aebdd2' }}>One clear price to build your site, plus a low monthly fee that covers hosting, security, and support. No hidden hours, no surprise invoices.</p>
           </div>
-          <div className="plans">
-            {/* STARTER */}
-            <div className="plan">
-              <h3>Starter</h3>
-              <div className="tag">For a clean, simple online presence</div>
-              <div className="price-row"><span className="price">$600</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $45/mo hosting &amp; care</div>
-              <ul>
-                <li>Up to 5 pages</li>
-                <li>In-person consultation</li>
-                <li>Mobile-friendly custom design</li>
-                <li>Google Business Profile setup</li>
-                <li>Basic local SEO</li>
-                <li className="no">Photography &amp; drone content</li>
-                <li className="no">Social media setup</li>
-                <li className="no">Branding &amp; logo</li>
-              </ul>
-              <a href="#contact" className="btn btn-navy" style={{ color: 'var(--navy)', borderColor: 'var(--navy)', background: '#fff', textDecoration: 'none' }}>Get Started</a>
-            </div>
-            {/* GROWTH */}
-            <div className="plan featured">
-              <h3>Growth</h3>
-              <div className="tag">Our most popular package</div>
-              <div className="price-row"><span className="price">$1,200</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $88/mo hosting &amp; care</div>
-              <ul>
-                <li>Up to 8 pages</li>
-                <li>In-person consultation &amp; shoot day</li>
-                <li>Photography &amp; drone content</li>
-                <li>Google Business Profile &amp; Maps</li>
-                <li>Full local SEO</li>
-                <li>Social media setup (FB/IG/TikTok)</li>
-                <li>Review &amp; reputation setup</li>
-              </ul>
-              <a href="#contact" className="btn btn-primary" style={{ textDecoration: 'none' }}>Get Started</a>
-            </div>
-            {/* PREMIUM */}
-            <div className="plan">
-              <h3>Premium</h3>
-              <div className="tag">For multi-location or growth-focused businesses</div>
-              <div className="price-row"><span className="price">$1,900</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $139/mo hosting &amp; care</div>
-              <ul>
-                <li>Unlimited pages</li>
-                <li>Everything in Growth</li>
-                <li>Full branding &amp; logo design</li>
-                <li>Online booking &amp; scheduling setup</li>
-                <li>Print &amp; promotional materials</li>
-                <li>Monthly SEO &amp; reputation reporting</li>
-                <li>Priority support &amp; quarterly refresh</li>
-              </ul>
-              <a href="#contact" className="btn btn-outline" style={{ textDecoration: 'none' }}>Get Started</a>
-            </div>
-          </div>
-          <p className="price-note">Prices shown are starting rates for a typical single-location Denver business — final quote confirmed after your free in-person consultation. Monthly fee covers hosting, security updates, backups, and basic support; cancel anytime.</p>
+          <PackageBuilder />
         </div>
       </section>
 
