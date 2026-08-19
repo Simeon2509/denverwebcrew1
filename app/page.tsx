@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Nav from './Nav'
 import ContactForm from './ContactForm'
 
@@ -419,7 +418,8 @@ export default function Home() {
         <div className="wrap">
           <div className="foot-grid">
             <div className="foot-logo">
-              <Image src="/denver-web-crew-lockup-dark.png" alt="Denver Web Crew" width={180} height={44} style={{ objectFit: 'contain', height: '36px', width: 'auto' }} />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/denver-web-crew-lockup-dark.png" alt="Denver Web Crew" style={{ height: '36px', width: 'auto', display: 'block' }} />
             </div>
             <div className="foot-links">
               <a href="#services">Services</a>

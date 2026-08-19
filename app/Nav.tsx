@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const LINKS: [string, string][] = [
@@ -30,13 +29,14 @@ export default function Nav() {
   return (
     <>
       <header style={{
-        position: 'sticky', top: 0, zIndex: 50,
-        background: 'rgba(247,245,240,.88)', backdropFilter: 'blur(10px)',
+        position: 'fixed', top: 0, left: 0, right: 0, zIndex: 200,
+        background: 'rgba(247,245,240,.93)', backdropFilter: 'blur(10px)',
         borderBottom: '1px solid var(--line)',
       }}>
-        <nav className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '16px', paddingBottom: '16px' }}>
+        <nav className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '14px', paddingBottom: '14px' }}>
           <Link href="/" onClick={close} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-            <Image src="/denver-web-crew-lockup.png" alt="Denver Web Crew" width={180} height={44} style={{ objectFit: 'contain', height: '36px', width: 'auto' }} priority />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/denver-web-crew-lockup.png" alt="Denver Web Crew" style={{ height: '38px', width: 'auto', display: 'block' }} />
           </Link>
 
           {/* Desktop nav links */}
@@ -67,6 +67,9 @@ export default function Nav() {
         </nav>
       </header>
 
+      {/* Spacer so content doesn't hide under fixed nav */}
+      <div style={{ height: '68px' }} />
+
       {/* Overlay */}
       {menuOpen && (
         <div onClick={close} style={{
@@ -78,7 +81,8 @@ export default function Nav() {
       {/* Drawer */}
       <div className={`dwc-drawer${menuOpen ? ' dwc-drawer--open' : ''}`}>
         <div style={{ marginBottom: '1.5rem' }}>
-          <Image src="/denver-web-crew-lockup.png" alt="Denver Web Crew" width={160} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/denver-web-crew-lockup.png" alt="Denver Web Crew" style={{ height: '32px', width: 'auto', display: 'block' }} />
         </div>
         {LINKS.map(([label, href]) => (
           <a
