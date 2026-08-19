@@ -51,7 +51,7 @@ export default function Nav() {
 
           {/* Desktop CTA */}
           <div className="nav-desktop-cta" style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
-            <a href="tel:+17205550142" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>(720) 555-0142</a>
+            <a href="tel:+13039497775" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>(303) 949-7775</a>
             <a href="#contact" className="btn btn-navy">Book a Visit</a>
           </div>
 
@@ -95,7 +95,7 @@ export default function Nav() {
           </a>
         ))}
         <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-          <a href="tel:+17205550142" style={{ fontSize: '15px', fontWeight: 700, color: 'var(--navy)' }}>(720) 555-0142</a>
+          <a href="tel:+13039497775" style={{ fontSize: '15px', fontWeight: 700, color: 'var(--navy)' }}>(303) 949-7775</a>
           <a href="#contact" onClick={close} className="btn btn-navy" style={{ justifyContent: 'center' }}>Book a Visit</a>
         </div>
       </div>

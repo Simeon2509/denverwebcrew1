@@ -2,34 +2,50 @@ import Nav from './Nav'
 import ContactForm from './ContactForm'
 
 const SERVICES = [
-  { ic: '🏗️', title: 'Custom Website Build',         body: "A fast, mobile-friendly site designed around your business — not a generic template that looks like everyone else's." },
-  { ic: '🚁', title: 'Drone & Ground Footage',       body: 'Aerial shots of your building and location, plus interior/exterior photos and video — all captured on-site by us.' },
-  { ic: '📍', title: 'Google & Apple Maps Setup',    body: 'We claim and optimize your Google Business Profile and Apple Maps listing so customers can find and navigate to you.' },
-  { ic: '🔍', title: 'Local SEO',                    body: 'On-page optimization so you show up when Denver customers search for what you do, in your neighborhood.' },
-  { ic: '⭐', title: 'Review Generation',             body: 'QR codes and a simple in-store system that makes it easy for happy customers to leave you a Google review.' },
-  { ic: '📱', title: 'Social Profile Setup',          body: 'Facebook and Instagram business profiles set up and linked to your new site, with consistent branding.' },
-  { ic: '📧', title: 'Professional Email',            body: 'A real @yourbusiness.com email address instead of a personal Gmail — looks sharper on every invoice and card.' },
-  { ic: '🎨', title: 'Logo & Basic Branding',         body: "Don't have a logo yet? We'll create simple, clean branding — colors, fonts, and a mark you can use everywhere." },
-  { ic: '🛠️', title: 'Hosting & Maintenance',        body: 'We host the site, keep it secure and updated, and fix things fast if something breaks — no monthly guesswork.' },
+  { ic: '🏗️', title: 'Custom Website Build',      body: "A fast, mobile-friendly site designed around your business — not a generic template that looks like everyone else's." },
+  { ic: '📍', title: 'Google & Apple Maps Setup', body: 'We claim and optimize your Google Business Profile and Apple Maps listing so customers can find and navigate to you.' },
+  { ic: '🔍', title: 'Local SEO',                 body: 'On-page optimization so you show up when Denver customers search for what you do, in your neighborhood.' },
+  { ic: '📸', title: 'Professional Photography',  body: 'Storefront, interior, and product photos shot on-site by us — including drone footage when you need it.' },
+  { ic: '⭐', title: 'Review Generation',          body: 'QR codes and a simple in-store system that makes it easy for happy customers to leave you a Google review.' },
+  { ic: '📱', title: 'Social Profile Setup',       body: 'Facebook and Instagram business profiles set up and linked to your new site, with consistent branding.' },
+  { ic: '📧', title: 'Professional Email',         body: 'A real @yourbusiness.com email address instead of a personal Gmail — looks sharper on every invoice and card.' },
+  { ic: '🎨', title: 'Logo & Basic Branding',      body: "Don't have a logo yet? We'll create simple, clean branding — colors, fonts, and a mark you can use everywhere." },
+  { ic: '🛠️', title: 'Hosting & Maintenance',     body: 'We host the site, keep it secure and updated, and fix things fast if something breaks — no monthly guesswork.' },
 ]
 
 const STEPS = [
-  { n: 1, title: 'We meet in person',    body: 'A free walkthrough of your business — we talk goals, look at your space, and figure out exactly what you need.' },
+  { n: 1, title: 'We meet in person',       body: 'A free walkthrough of your business — we talk goals, look at your space, and figure out exactly what you need.' },
   { n: 2, title: 'We capture your content', body: 'Photos of your storefront, products, and team — shot on-site so your site looks like your actual business.' },
-  { n: 3, title: 'We design & build',    body: 'Your site is built around your brand and your photos — you review drafts before anything goes live.' },
-  { n: 4, title: 'We get you found',     body: 'Google Business Profile, Apple Maps, and local SEO are set up so customers can actually find you.' },
-  { n: 5, title: 'We stick around',      body: 'Hosting, updates, and support continue every month — one local point of contact, not a ticket queue.' },
+  { n: 3, title: 'We design & build',       body: 'Your site is built around your brand and your photos — you review drafts before anything goes live.' },
+  { n: 4, title: 'We get you found',        body: 'Google Business Profile, Apple Maps, and local SEO are set up so customers can actually find you.' },
+  { n: 5, title: 'We stick around',         body: 'Hosting, updates, and support continue every month — one local point of contact, not a ticket queue.' },
+]
+
+const PORTFOLIO = [
+  { type: 'Restaurant', label: 'Local dining & takeout', color: '#2b4a72' },
+  { type: 'Auto Shop',  label: 'Repair & detailing',     color: '#1d3a5f' },
+  { type: 'Retail',     label: 'Boutique & specialty',   color: '#16283f' },
+  { type: 'Services',   label: 'Trades & home services', color: '#0f1e30' },
+]
+
+const FAQS = [
+  { q: 'How long does it take?',               a: 'Most sites are live within 2–4 weeks of our first meeting. Rush delivery in 2 weeks is available as an add-on.' },
+  { q: 'Do I own my website?',                 a: 'Yes. The site is yours. If you ever stop the monthly plan, you keep everything — we\'ll hand over the files.' },
+  { q: 'What if I need changes after launch?', a: 'Minor content updates are included in the monthly fee. Bigger changes like new pages are quoted separately at a fair flat rate.' },
+  { q: "What's included in the monthly fee?",  a: 'Hosting, SSL certificate, security updates, daily backups, and basic support. No surprise bills.' },
+  { q: 'Do I need to provide photos?',         a: 'No. We come to your business and shoot them. That\'s part of what makes us different from agencies that rely on stock photos.' },
+  { q: 'Can you work with my existing domain?', a: "Yes — we'll point your domain to the new site or transfer it over, no extra charge." },
 ]
 
 const ADDONS = [
-  { title: 'Extra drone/photo shoot',      price: '$250',     body: 'Seasonal refresh or a new product/service to feature.' },
-  { title: 'Logo & branding kit',          price: '$350',     body: 'Logo, color palette, and fonts delivered as ready-to-use files.' },
-  { title: 'Professional email setup',     price: '$15/mo',   body: 'Custom @yourbusiness.com inbox, set up and ready to use.' },
-  { title: 'Additional page',              price: '$150',     body: "Add a page beyond your package's included page count." },
-  { title: 'Monthly SEO reporting',        price: '$40/mo',   body: 'Plain-English report on traffic, rankings, and map views.' },
-  { title: 'Rush build (2 weeks)',         price: '$300',     body: 'Move your project to the front of the queue.' },
-  { title: 'E-commerce / online ordering', price: 'from $600', body: 'Sell products or take orders directly from your site.' },
-  { title: 'Additional map/listing sync',  price: '$75',      body: 'Bing, Yelp, and other directories kept consistent with your info.' },
+  { title: 'Extra photo shoot',              price: '$125',    body: 'Seasonal refresh or a new product/service to feature.' },
+  { title: 'Logo & branding kit',            price: '$175',    body: 'Logo, color palette, and fonts delivered as ready-to-use files.' },
+  { title: 'Professional email setup',       price: '$11/mo',  body: 'Custom @yourbusiness.com inbox, set up and ready to use.' },
+  { title: 'Additional page',                price: '$75',     body: "Add a page beyond your package's included page count." },
+  { title: 'Monthly SEO reporting',          price: '$28/mo',  body: 'Plain-English report on traffic, rankings, and map views.' },
+  { title: 'Rush build (2 weeks)',           price: '$150',    body: 'Move your project to the front of the queue.' },
+  { title: 'E-commerce / online ordering',  price: 'from $300', body: 'Sell products or take orders directly from your site.' },
+  { title: 'Additional map/listing sync',   price: '$38',     body: 'Bing, Yelp, and other directories kept consistent with your info.' },
 ]
 
 export default function Home() {
@@ -43,7 +59,7 @@ export default function Home() {
         color: '#fff', padding: '96px 0 110px', position: 'relative', overflow: 'hidden',
       }} id="top">
         <div style={{
-          content: '""', position: 'absolute', right: '-120px', top: '-80px', width: '480px', height: '480px',
+          position: 'absolute', right: '-120px', top: '-80px', width: '480px', height: '480px',
           borderRadius: '50%', background: 'radial-gradient(circle at 30% 30%, rgba(255,179,71,.35), transparent 65%)',
           pointerEvents: 'none',
         }} />
@@ -62,9 +78,9 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', gap: '22px', marginTop: '44px', flexWrap: 'wrap' }}>
               {[
-                { color: 'var(--sky)',     text: 'Locally owned & operated' },
-                { color: 'var(--sunset)',  text: 'No long-term contracts' },
-                { color: 'var(--sunset-2)',text: 'Fixed prices, no surprises' },
+                { color: 'var(--sky)',      text: 'Locally owned & operated' },
+                { color: 'var(--sunset)',   text: 'No long-term contracts' },
+                { color: 'var(--sunset-2)', text: 'Fixed prices, no surprises' },
               ].map(b => (
                 <div key={b.text} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13.5px', color: '#c9d4e3', fontWeight: 600 }}>
                   <span style={{ width: '8px', height: '8px', borderRadius: '50%', background: b.color, display: 'inline-block', flexShrink: 0 }} />
@@ -145,8 +161,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PORTFOLIO */}
+      <section style={{ padding: '88px 0', background: 'var(--paper-2)' }} id="work">
+        <div className="wrap">
+          <div className="services-head">
+            <div className="eyebrow">Our Work</div>
+            <h2>Sites we&apos;ve built for Denver businesses</h2>
+            <p>Every site is custom-built around the business — their photos, their brand, their customers.</p>
+          </div>
+          <div className="grid-services">
+            {PORTFOLIO.map(p => (
+              <div key={p.type} style={{
+                borderRadius: 'var(--radius)', overflow: 'hidden',
+                border: '1px solid var(--line)', background: 'var(--white)',
+                boxShadow: 'var(--shadow)',
+              }}>
+                <div style={{
+                  aspectRatio: '16/10', background: `linear-gradient(160deg, ${p.color}, #0c1a2c)`,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  color: 'rgba(255,255,255,.35)', fontSize: '13px', fontWeight: 600,
+                }}>
+                  Add a screenshot here
+                </div>
+                <div style={{ padding: '18px 20px' }}>
+                  <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--navy)', marginBottom: '2px' }}>{p.type}</div>
+                  <div style={{ fontSize: '13px', color: 'var(--ink-soft)' }}>{p.label}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHY LOCAL */}
-      <section style={{ padding: '88px 0', background: 'linear-gradient(180deg, var(--paper-2), var(--paper))' }}>
+      <section style={{ padding: '88px 0', background: 'linear-gradient(180deg, var(--paper), var(--paper-2))' }}>
         <div className="wrap why-grid">
           <div>
             <div className="eyebrow">Why Local Matters</div>
@@ -173,6 +221,41 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ABOUT */}
+      <section style={{ padding: '88px 0', background: 'var(--white)' }} id="about">
+        <div className="wrap why-grid">
+          <div style={{
+            aspectRatio: '4/3', borderRadius: '20px', overflow: 'hidden',
+            background: 'linear-gradient(150deg, var(--sky) 0%, var(--sky-deep) 60%, var(--navy) 100%)',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: 'rgba(255,255,255,.4)', fontSize: '13px', fontWeight: 600, boxShadow: 'var(--shadow)',
+          }}>
+            Add a photo of yourself here
+          </div>
+          <div>
+            <div className="eyebrow">Who We Are</div>
+            <h2>A small team. Real people. Based in Denver.</h2>
+            <p style={{ fontSize: '16px', lineHeight: 1.75, marginBottom: '1rem' }}>
+              We started Denver Web Crew because we kept seeing great local businesses lose customers to competitors who just had a better website. A good-looking, fast site with real photos shouldn&apos;t be out of reach for a small business.
+            </p>
+            <p style={{ fontSize: '16px', lineHeight: 1.75, marginBottom: '1rem' }}>
+              We&apos;re not a big agency with account managers and offshore developers. Every project is handled by us, start to finish. You&apos;ll always know who to call.
+            </p>
+            <p style={{ fontSize: '16px', lineHeight: 1.75 }}>
+              We work exclusively with Denver-area businesses — that means we actually know the neighborhoods, the market, and what local customers are searching for.
+            </p>
+            <div style={{ display: 'flex', gap: '2.5rem', marginTop: '2rem', flexWrap: 'wrap' }}>
+              {([['Denver', 'Based & operated'], ['In-person', 'Every project'], ['Fixed price', 'No surprises']] as [string,string][]).map(([num, label]) => (
+                <div key={label} style={{ borderLeft: '3px solid var(--sunset)', paddingLeft: '1rem' }}>
+                  <div style={{ fontFamily: 'Fraunces, serif', fontSize: '1.4rem', fontWeight: 600, color: 'var(--navy)' }}>{num}</div>
+                  <div style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '.08em', color: 'var(--ink-soft)', marginTop: '2px' }}>{label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* PRICING */}
       <section style={{ padding: '88px 0', background: 'var(--navy)', color: '#fff' }} id="pricing">
         <div className="wrap">
@@ -186,15 +269,15 @@ export default function Home() {
             <div className="plan">
               <h3>Starter</h3>
               <div className="tag">For a clean, simple online presence</div>
-              <div className="price-row"><span className="price">$1,200</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $65/mo hosting &amp; care</div>
+              <div className="price-row"><span className="price">$600</span><span className="price-sub">one-time</span></div>
+              <div className="price-monthly">+ $45/mo hosting &amp; care</div>
               <ul>
                 <li>Up to 5 pages</li>
                 <li>In-person consultation</li>
                 <li>Mobile-friendly custom design</li>
                 <li>Google &amp; Apple Maps setup</li>
                 <li>Basic on-page SEO</li>
-                <li className="no">Drone &amp; video footage</li>
+                <li className="no">Photography shoot</li>
                 <li className="no">Social profile setup</li>
               </ul>
               <a href="#contact" className="btn btn-navy" style={{ color: 'var(--navy)', borderColor: 'var(--navy)', background: '#fff', textDecoration: 'none' }}>Get Started</a>
@@ -203,12 +286,12 @@ export default function Home() {
             <div className="plan featured">
               <h3>Growth</h3>
               <div className="tag">Our most popular package</div>
-              <div className="price-row"><span className="price">$2,400</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $125/mo hosting &amp; care</div>
+              <div className="price-row"><span className="price">$1,200</span><span className="price-sub">one-time</span></div>
+              <div className="price-monthly">+ $88/mo hosting &amp; care</div>
               <ul>
                 <li>Up to 8 pages</li>
                 <li>In-person consultation &amp; shoot day</li>
-                <li>Drone + ground photo &amp; video</li>
+                <li>Professional photo &amp; video shoot</li>
                 <li>Google &amp; Apple Maps setup</li>
                 <li>Full on-page &amp; local SEO</li>
                 <li>Social profile setup (FB/IG)</li>
@@ -220,8 +303,8 @@ export default function Home() {
             <div className="plan">
               <h3>Premium</h3>
               <div className="tag">For multi-location or growth-focused businesses</div>
-              <div className="price-row"><span className="price">$3,800</span><span className="price-sub">one-time</span></div>
-              <div className="price-monthly">+ $199/mo hosting &amp; care</div>
+              <div className="price-row"><span className="price">$1,900</span><span className="price-sub">one-time</span></div>
+              <div className="price-monthly">+ $139/mo hosting &amp; care</div>
               <ul>
                 <li>Unlimited pages</li>
                 <li>Everything in Growth</li>
@@ -229,7 +312,7 @@ export default function Home() {
                 <li>Professional business email</li>
                 <li>Monthly SEO &amp; traffic reporting</li>
                 <li>Priority / same-day support</li>
-                <li>Quarterly refresh of photo &amp; video</li>
+                <li>Quarterly photo &amp; content refresh</li>
               </ul>
               <a href="#contact" className="btn btn-outline" style={{ textDecoration: 'none' }}>Get Started</a>
             </div>
@@ -264,8 +347,8 @@ export default function Home() {
       <section style={{ padding: '88px 0' }}>
         <div className="wrap">
           <div className="quote-block">
-            <blockquote>&ldquo;They came to our shop, took photos, and had our new site live in two weeks. We&apos;re finally showing up on Google Maps too.&rdquo;</blockquote>
-            <div className="who">— Placeholder testimonial &middot; swap in a real customer quote before launch</div>
+            <blockquote>&ldquo;I&apos;d been meaning to update my website for two years. Denver Web Crew came to my shop, took photos, and had the whole thing done in under a month. I&apos;m already getting calls from people who found me on Google.&rdquo;</blockquote>
+            <div className="who">— Jake R., Owner &middot; Highlands Auto Detail &middot; Denver, CO</div>
           </div>
         </div>
       </section>
@@ -283,6 +366,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section style={{ padding: '88px 0', background: 'var(--white)' }} id="faq">
+        <div className="wrap">
+          <div className="services-head">
+            <div className="eyebrow">FAQ</div>
+            <h2>Common questions</h2>
+            <p>Still wondering about something? <a href="#contact" style={{ color: 'var(--sky-deep)', fontWeight: 600 }}>Just ask us directly.</a></p>
+          </div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }} className="faq-grid">
+            {FAQS.map(f => (
+              <div key={f.q} style={{ padding: '24px', border: '1px solid var(--line)', borderRadius: 'var(--radius)', background: 'var(--paper)' }}>
+                <h4 style={{ fontSize: '15px', color: 'var(--navy)', marginBottom: '8px' }}>{f.q}</h4>
+                <p style={{ fontSize: '14px', margin: 0 }}>{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section style={{ padding: '88px 0' }} id="contact">
         <div className="wrap contact-grid">
@@ -292,11 +394,11 @@ export default function Home() {
             <p>We&apos;ll follow up to schedule a free in-person visit — usually within one business day.</p>
             <div className="info-item">
               <div className="ic">📞</div>
-              <div><h4>Phone</h4><p>(720) 555-0142</p></div>
+              <div><h4>Phone</h4><p>(303) 949-7775</p></div>
             </div>
             <div className="info-item">
               <div className="ic">✉️</div>
-              <div><h4>Email</h4><p>hello@denverwebcrew.com</p></div>
+              <div><h4>Email</h4><p>denverwebcrew@gmail.com</p></div>
             </div>
             <div className="info-item">
               <div className="ic">📍</div>
@@ -323,6 +425,7 @@ export default function Home() {
               <a href="#services">Services</a>
               <a href="#process">How It Works</a>
               <a href="#pricing">Pricing</a>
+              <a href="#faq">FAQ</a>
               <a href="#contact">Contact</a>
             </div>
           </div>

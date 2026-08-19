@@ -235,10 +235,13 @@ img, svg { display: block; max-width: 100%; }
 }
 .dwc-drawer--open { transform: translateX(0); }
 
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
 @media (max-width: 840px) {
   .dwc-burger { display: flex; }
   .nav-desktop-links { display: none !important; }
   .nav-desktop-cta { display: none !important; }
+  .faq-grid { grid-template-columns: 1fr !important; }
 
   .hero-grid { grid-template-columns: 1fr !important; }
   .hero-card { display: none; }
