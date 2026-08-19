@@ -9,6 +9,8 @@ type AddOn = {
   monthly: number
 }
 
+type Feature = { label: string; yes: boolean }
+
 type Package = {
   id: string
   name: string
@@ -16,6 +18,7 @@ type Package = {
   featured?: boolean
   basePrice: number
   baseMonthly: number
+  features: Feature[]
   included: string[]
   addons: AddOn[]
 }
@@ -27,6 +30,22 @@ const PACKAGES: Package[] = [
     tag: 'For a clean, simple online presence',
     basePrice: 600,
     baseMonthly: 45,
+    features: [
+      { label: 'Up to 5 pages',                  yes: true  },
+      { label: 'In-person consultation',          yes: true  },
+      { label: 'Mobile-friendly custom design',   yes: true  },
+      { label: 'Professional photography',        yes: true  },
+      { label: 'Drone footage',                   yes: true  },
+      { label: 'Google Business Profile',         yes: true  },
+      { label: 'Local SEO',                       yes: true  },
+      { label: 'Social media setup',              yes: false },
+      { label: 'Review system setup',             yes: false },
+      { label: 'Branding & logo design',          yes: false },
+      { label: 'Online booking system',           yes: false },
+      { label: 'Print materials',                 yes: false },
+      { label: 'Monthly SEO reporting',           yes: false },
+      { label: 'Priority support',                yes: false },
+    ],
     included: [
       'Up to 5 pages',
       'In-person consultation',
@@ -53,6 +72,22 @@ const PACKAGES: Package[] = [
     featured: true,
     basePrice: 1200,
     baseMonthly: 88,
+    features: [
+      { label: 'Up to 8 pages',                  yes: true  },
+      { label: 'In-person consultation',          yes: true  },
+      { label: 'Mobile-friendly custom design',   yes: true  },
+      { label: 'Professional photography',        yes: true  },
+      { label: 'Drone footage',                   yes: true  },
+      { label: 'Google Business Profile',         yes: true  },
+      { label: 'Full local SEO',                  yes: true  },
+      { label: 'Social media setup (FB/IG)',      yes: true  },
+      { label: 'Review system setup',             yes: true  },
+      { label: 'Branding & logo design',          yes: false },
+      { label: 'Online booking system',           yes: false },
+      { label: 'Print materials',                 yes: false },
+      { label: 'Monthly SEO reporting',           yes: false },
+      { label: 'Priority support',                yes: false },
+    ],
     included: [
       'Up to 8 pages',
       'In-person consultation & shoot day',
@@ -79,6 +114,22 @@ const PACKAGES: Package[] = [
     tag: 'For multi-location or growth-focused businesses',
     basePrice: 1900,
     baseMonthly: 139,
+    features: [
+      { label: 'Unlimited pages',                yes: true },
+      { label: 'In-person consultation',         yes: true },
+      { label: 'Mobile-friendly custom design',  yes: true },
+      { label: 'Professional photography',       yes: true },
+      { label: 'Drone footage',                  yes: true },
+      { label: 'Google Business Profile',        yes: true },
+      { label: 'Full local SEO',                 yes: true },
+      { label: 'Social media setup (FB/IG)',     yes: true },
+      { label: 'Review system setup',            yes: true },
+      { label: 'Branding & logo design',         yes: true },
+      { label: 'Online booking system',          yes: true },
+      { label: 'Print materials',                yes: true },
+      { label: 'Monthly SEO reporting',          yes: true },
+      { label: 'Priority support',               yes: true },
+    ],
     included: [
       'Unlimited pages',
       'Everything in Growth',
@@ -236,8 +287,15 @@ export default function PackageBuilder() {
               <span className="price-sub">one-time</span>
             </div>
             <div className="price-monthly">+ {fmt(pkg.baseMonthly)}/mo hosting &amp; care</div>
-            <ul style={{ flex: 1 }}>
-              {pkg.included.map(item => <li key={item}>{item}</li>)}
+            <ul style={{ flex: 1, listStyle: 'none', margin: '0 0 24px', padding: 0, display: 'flex', flexDirection: 'column', gap: '9px' }}>
+              {pkg.features.map(f => (
+                <li key={f.label} style={{ display: 'flex', gap: '10px', alignItems: 'center', fontSize: '13.5px', color: f.yes ? '#dbe3ee' : 'rgba(219,227,238,.35)', opacity: f.yes ? 1 : 0.5 }}>
+                  <span style={{ fontWeight: 800, flexShrink: 0, fontSize: '13px', color: f.yes ? 'var(--sky)' : 'rgba(122,138,160,.6)' }}>
+                    {f.yes ? '✓' : '✕'}
+                  </span>
+                  {f.label}
+                </li>
+              ))}
             </ul>
             <button
               onClick={() => setOpen(pkg.id)}
