@@ -63,6 +63,7 @@ const PACKAGES: Package[] = [
       { id: 'print',   label: 'Print Materials',                  desc: 'Business cards, flyers, menus, or brochures — price depends on volume and type.',       oneTime: 200, monthly: 0, priceLabel: 'from $200' },
       { id: 'reviews', label: 'Review System Setup',              desc: 'QR codes and a system to collect and manage Google reviews.',                           oneTime: 150, monthly: 0 },
       { id: 'seo',     label: 'Monthly SEO Reporting',            desc: 'Plain-English report on traffic and rankings every month.',                             oneTime: 0,   monthly: 28 },
+      { id: 'rush',    label: 'Rush Build (2 weeks)',             desc: 'Move your project to the front of the queue.',                                          oneTime: 150, monthly: 0 },
     ],
   },
   {
@@ -100,10 +101,10 @@ const PACKAGES: Package[] = [
       'Review system setup',
     ],
     addons: [
-      { id: 'booking', label: 'Online Booking System',      desc: 'Customers can schedule appointments directly on your site.',                      oneTime: 125, monthly: 0 },
-      { id: 'print',   label: 'Print Materials',            desc: 'Business cards, flyers, menus, or brochures — price depends on volume and type.', oneTime: 200, monthly: 0, priceLabel: 'from $200' },
-      { id: 'ecom',    label: 'E-commerce / Online Orders', desc: 'Sell products or take orders directly from your site.',                          oneTime: 300, monthly: 0 },
-      { id: 'seo',     label: 'Monthly SEO Reporting',      desc: 'Plain-English report on traffic and rankings every month.',                       oneTime: 0,   monthly: 28 },
+      { id: 'booking', label: 'Online Booking System',  desc: 'Customers can schedule appointments directly on your site.',                      oneTime: 125, monthly: 0 },
+      { id: 'print',   label: 'Print Materials',        desc: 'Business cards, flyers, menus, or brochures — price depends on volume and type.', oneTime: 200, monthly: 0, priceLabel: 'from $200' },
+      { id: 'seo',     label: 'Monthly SEO Reporting',  desc: 'Plain-English report on traffic and rankings every month.',                       oneTime: 0,   monthly: 28 },
+      { id: 'rush',    label: 'Rush Build (2 weeks)',   desc: 'Move your project to the front of the queue.',                                    oneTime: 150, monthly: 0 },
     ],
   },
   {
@@ -138,11 +139,10 @@ const PACKAGES: Package[] = [
       'Priority support & quarterly refresh',
     ],
     addons: [
-      { id: 'drone2',    label: 'Extra Drone Shoot',          desc: 'Additional aerial shoot for a new season or second location.',  oneTime: 125, monthly: 0 },
-      { id: 'ecom',      label: 'E-commerce / Online Orders', desc: 'Sell products or take orders directly from your site.',         oneTime: 300, monthly: 0 },
-      { id: 'content',   label: 'Social Content Pack (10 posts)', desc: '10 professionally designed posts ready to publish.',        oneTime: 150, monthly: 0 },
-      { id: 'rush',      label: 'Rush Build (2 weeks)',        desc: 'Move your project to the front of the queue.',                 oneTime: 150, monthly: 0 },
-      { id: 'extra_loc', label: 'Additional Location Setup',  desc: 'Google Profile, Maps, and SEO setup for a second location.',   oneTime: 200, monthly: 0 },
+      { id: 'print',     label: 'Print Materials',           desc: 'Business cards, flyers, menus, or brochures — price depends on volume and type.', oneTime: 200, monthly: 0, priceLabel: 'from $200' },
+      { id: 'seo',       label: 'Monthly SEO Reporting',     desc: 'Plain-English report on traffic and rankings every month.',                        oneTime: 0,   monthly: 28 },
+      { id: 'rush',      label: 'Rush Build (2 weeks)',      desc: 'Move your project to the front of the queue.',                                     oneTime: 150, monthly: 0 },
+      { id: 'extra_loc', label: 'Additional Location Setup', desc: 'Google Profile, Maps, and SEO setup for a second location.',                       oneTime: 200, monthly: 0 },
     ],
   },
 ]
