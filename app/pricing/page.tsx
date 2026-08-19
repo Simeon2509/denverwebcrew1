@@ -5,8 +5,14 @@ import Footer from '../Footer'
 import PackageBuilder from '../PackageBuilder'
 
 export const metadata: Metadata = {
-  title: 'Pricing — Denver Web Crew',
-  description: 'Simple fixed-price packages for Denver local businesses. Starting at $600 one-time + low monthly hosting. Customize your package with add-ons.',
+  title: 'Web Design Pricing Denver CO | Fixed-Price Packages from $600',
+  description: 'Affordable, fixed-price web design packages for Denver small businesses. Starter from $600, Growth from $1,000, Premium from $1,900 — all include photography, branding, and local SEO. No hidden fees.',
+  alternates: { canonical: 'https://denverwebcrew.com/pricing' },
+  openGraph: {
+    title: 'Web Design Pricing Denver CO | Fixed-Price Packages from $600',
+    description: 'Fixed-price web design packages for Denver, Aurora, Lakewood, and Front Range businesses. Starting at $600 one-time + low monthly hosting. Customize with add-ons.',
+    url: 'https://denverwebcrew.com/pricing',
+  },
 }
 
 const ADDONS = [

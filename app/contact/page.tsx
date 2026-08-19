@@ -4,8 +4,14 @@ import Footer from '../Footer'
 import ContactForm from '../ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact — Denver Web Crew',
-  description: 'Get in touch with Denver Web Crew. We\'ll follow up within one business day to schedule your free in-person site visit.',
+  title: 'Contact Denver Web Crew | Free In-Person Site Visit — Denver CO',
+  description: 'Contact Denver Web Crew to schedule your free in-person site visit. We serve Denver, Aurora, Lakewood, Littleton, Englewood, Arvada, Westminster, and across the Front Range. Call (303) 949-7775 or email us.',
+  alternates: { canonical: 'https://denverwebcrew.com/contact' },
+  openGraph: {
+    title: 'Contact Denver Web Crew | Free In-Person Site Visit — Denver CO',
+    description: 'Schedule your free in-person walkthrough with Denver Web Crew. Serving Denver, Aurora, Lakewood, Littleton, and all Front Range communities. (303) 949-7775.',
+    url: 'https://denverwebcrew.com/contact',
+  },
 }
 
 export default function Contact() {

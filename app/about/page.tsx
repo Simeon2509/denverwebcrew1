@@ -4,8 +4,14 @@ import Nav from '../Nav'
 import Footer from '../Footer'
 
 export const metadata: Metadata = {
-  title: 'About — Denver Web Crew',
-  description: 'Denver Web Crew is a small local team that builds websites for Denver businesses in person. Real people, real visits, real results.',
+  title: 'About Denver Web Crew | Local Web Design Team, Denver Colorado',
+  description: 'Denver Web Crew is a locally owned web design team based in Denver, CO. We meet every client in person, serve businesses across the Front Range, and handle every project start to finish — no outsourcing.',
+  alternates: { canonical: 'https://denverwebcrew.com/about' },
+  openGraph: {
+    title: 'About Denver Web Crew | Local Web Design Team, Denver Colorado',
+    description: 'A small, locally owned team building websites in person for Denver, Aurora, Lakewood, Littleton, and Front Range businesses. Real people, real visits.',
+    url: 'https://denverwebcrew.com/about',
+  },
 }
 
 export default function About() {

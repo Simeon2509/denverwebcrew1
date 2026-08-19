@@ -1,7 +1,19 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Nav from './Nav'
 import Footer from './Footer'
 import ContactForm from './ContactForm'
+
+export const metadata: Metadata = {
+  title: 'Denver Web Crew | Local Web Design for Denver & Front Range Businesses',
+  description: 'Denver Web Crew builds websites in person for small businesses in Denver, Aurora, Lakewood, Littleton, Englewood, Arvada, and the Front Range. Photography, Google Maps setup, local SEO, and branding — fixed-price packages starting at $600.',
+  alternates: { canonical: 'https://denverwebcrew.com' },
+  openGraph: {
+    title: 'Denver Web Crew | Local Web Design for Denver & Front Range Businesses',
+    description: 'Websites built in person for Denver-area businesses — photography, Google Maps setup, local SEO, branding, and ongoing care. Fixed-price packages starting at $600.',
+    url: 'https://denverwebcrew.com',
+  },
+}
 
 const TESTIMONIALS = [
   {

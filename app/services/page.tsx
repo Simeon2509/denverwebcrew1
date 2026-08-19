@@ -4,8 +4,14 @@ import Nav from '../Nav'
 import Footer from '../Footer'
 
 export const metadata: Metadata = {
-  title: 'Services — Denver Web Crew',
-  description: 'Website development, photography, drone footage, Google Maps, local SEO, social media, branding, and more — all handled in person for Denver businesses.',
+  title: 'Web Design Services Denver CO | Photography, Local SEO & Google Maps',
+  description: 'Denver Web Crew offers web design, professional photography, drone content, Google Business Profile setup, local SEO, social media, branding, and print — all handled in person for Denver, Aurora, Lakewood, and Front Range businesses.',
+  alternates: { canonical: 'https://denverwebcrew.com/services' },
+  openGraph: {
+    title: 'Web Design Services Denver CO | Photography, Local SEO & Google Maps',
+    description: 'In-person web design, photography, drone content, Google Maps setup, local SEO, and branding for small businesses across the Denver metro area.',
+    url: 'https://denverwebcrew.com/services',
+  },
 }
 
 const SERVICES = [
