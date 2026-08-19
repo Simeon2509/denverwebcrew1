@@ -150,7 +150,6 @@ img, svg { display: block; max-width: 100%; }
 .price-monthly { font-size: 14px; color: var(--sunset-2); font-weight: 700; margin-bottom: 22px; }
 .plan ul { list-style: none; margin: 0 0 26px; padding: 0; display: flex; flex-direction: column; gap: 11px; flex: 1; }
 .plan li { font-size: 14px; color: #dbe3ee; display: flex; gap: 10px; align-items: flex-start; }
-.plan li::before { content: "✓"; color: var(--sky); font-weight: 800; flex: none; }
 .plan li.no { opacity: .4; }
 .plan li.no::before { content: "–"; color: #7a8aa0; }
 .plan .btn { width: 100%; }

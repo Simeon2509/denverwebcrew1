@@ -290,7 +290,7 @@ export default function PackageBuilder() {
             <ul style={{ flex: 1, listStyle: 'none', margin: '0 0 24px', padding: 0, display: 'flex', flexDirection: 'column', gap: '9px' }}>
               {pkg.features.map(f => (
                 <li key={f.label} style={{ display: 'flex', gap: '10px', alignItems: 'center', fontSize: '13.5px', color: f.yes ? '#dbe3ee' : 'rgba(219,227,238,.35)', opacity: f.yes ? 1 : 0.5 }}>
-                  <span style={{ fontWeight: 800, flexShrink: 0, fontSize: '13px', color: f.yes ? 'var(--sky)' : 'rgba(122,138,160,.6)' }}>
+                  <span style={{ fontWeight: 800, flexShrink: 0, fontSize: '13px', color: f.yes ? 'var(--sky)' : '#e05555' }}>
                     {f.yes ? '✓' : '✕'}
                   </span>
                   {f.label}
