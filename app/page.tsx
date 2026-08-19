@@ -98,10 +98,6 @@ export default function Home() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/hero-image2.jpg" alt="Denver business website example" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '16px', fontSize: '13px', color: '#a9b9cf' }}>
-              <span>Storefront &amp; interior shoot</span>
-              <span>Included in Growth &amp; Premium</span>
-            </div>
           </div>
         </div>
       </section>
