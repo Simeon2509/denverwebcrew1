@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 
 const LINKS: [string, string][] = [
@@ -34,9 +35,8 @@ export default function Nav() {
         borderBottom: '1px solid var(--line)',
       }}>
         <nav className="wrap" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingTop: '16px', paddingBottom: '16px' }}>
-          <Link href="/" onClick={close} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontFamily: 'var(--font-fraunces, Fraunces, serif)', fontWeight: 600, fontSize: '19px', color: 'var(--navy)', textDecoration: 'none' }}>
-            <span className="logo-mark" />
-            Denver Web Crew
+          <Link href="/" onClick={close} style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+            <Image src="/denver-web-crew-lockup.png" alt="Denver Web Crew" width={180} height={44} style={{ objectFit: 'contain', height: '36px', width: 'auto' }} priority />
           </Link>
 
           {/* Desktop nav links */}
@@ -77,6 +77,9 @@ export default function Nav() {
 
       {/* Drawer */}
       <div className={`dwc-drawer${menuOpen ? ' dwc-drawer--open' : ''}`}>
+        <div style={{ marginBottom: '1.5rem' }}>
+          <Image src="/denver-web-crew-lockup.png" alt="Denver Web Crew" width={160} height={40} style={{ objectFit: 'contain', height: '32px', width: 'auto' }} />
+        </div>
         {LINKS.map(([label, href]) => (
           <a
             key={label}

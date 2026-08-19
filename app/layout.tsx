@@ -19,11 +19,16 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: 'Denver Web Crew | Websites Built In Person, Denver CO',
-  description: 'Denver Web Crew builds websites for Denver local businesses — in person, with drone footage, Google & Apple Maps setup, and ongoing care. Fixed-price packages.',
+  description: 'Denver Web Crew builds websites for Denver local businesses — in person, with professional photography, Google & Apple Maps setup, and ongoing care. Fixed-price packages.',
+  icons: {
+    icon: '/denver-web-crew-favicon.png',
+    apple: '/denver-web-crew-favicon.png',
+  },
   openGraph: {
     title: 'Denver Web Crew | Websites Built In Person, Denver CO',
-    description: 'Denver Web Crew builds websites for Denver local businesses — in person, with drone footage, Google & Apple Maps setup, and ongoing care. Fixed-price packages.',
+    description: 'Denver Web Crew builds websites for Denver local businesses — in person, with professional photography, Google & Apple Maps setup, and ongoing care. Fixed-price packages.',
     url: 'https://denverwebcrew.com',
+    images: [{ url: '/denver-web-crew-lockup.png' }],
   },
 }
 
