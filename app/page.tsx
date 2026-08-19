@@ -170,18 +170,15 @@ export default function Home() {
             <p>Every site is custom-built around the business — their photos, their brand, their customers.</p>
           </div>
           <div className="grid-services">
-            {PORTFOLIO.map(p => (
+            {PORTFOLIO.map((p, i) => (
               <div key={p.type} style={{
                 borderRadius: 'var(--radius)', overflow: 'hidden',
                 border: '1px solid var(--line)', background: 'var(--white)',
                 boxShadow: 'var(--shadow)',
               }}>
-                <div style={{
-                  aspectRatio: '16/10', background: `linear-gradient(160deg, ${p.color}, #0c1a2c)`,
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
-                  color: 'rgba(255,255,255,.35)', fontSize: '13px', fontWeight: 600,
-                }}>
-                  Add a screenshot here
+                <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={`/portfolio-${i + 1}.jpg`} alt={p.type} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
                 <div style={{ padding: '18px 20px' }}>
                   <div style={{ fontWeight: 700, fontSize: '15px', color: 'var(--navy)', marginBottom: '2px' }}>{p.type}</div>
