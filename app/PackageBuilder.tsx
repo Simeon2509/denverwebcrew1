@@ -139,10 +139,8 @@ const PACKAGES: Package[] = [
       'Priority support & quarterly refresh',
     ],
     addons: [
-      { id: 'print',     label: 'Print Materials',           desc: 'Business cards, flyers, menus, or brochures — price depends on volume and type.', oneTime: 200, monthly: 0, priceLabel: 'from $200' },
-      { id: 'seo',       label: 'Monthly SEO Reporting',     desc: 'Plain-English report on traffic and rankings every month.',                        oneTime: 0,   monthly: 28 },
-      { id: 'rush',      label: 'Rush Build (2 weeks)',      desc: 'Move your project to the front of the queue.',                                     oneTime: 150, monthly: 0 },
-      { id: 'extra_loc', label: 'Additional Location Setup', desc: 'Google Profile, Maps, and SEO setup for a second location.',                       oneTime: 200, monthly: 0 },
+      { id: 'rush',      label: 'Rush Build (2 weeks)',      desc: 'Move your project to the front of the queue.',                  oneTime: 150, monthly: 0 },
+      { id: 'extra_loc', label: 'Additional Location Setup', desc: 'Google Profile, Maps, and SEO setup for a second location.',    oneTime: 200, monthly: 0 },
     ],
   },
 ]
