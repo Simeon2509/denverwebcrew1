@@ -71,7 +71,7 @@ const PACKAGES: Package[] = [
     name: 'Growth',
     tag: 'Our most popular package',
     featured: true,
-    basePrice: 1200,
+    basePrice: 1000,
     baseMonthly: 88,
     features: [
       { label: 'Up to 8 pages',                    yes: true  },
