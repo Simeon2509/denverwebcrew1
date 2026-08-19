@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 const LINKS: [string, string][] = [
-  ['Services',    '#services'],
-  ['How It Works','#process'],
-  ['Pricing',     '#pricing'],
-  ['Contact',     '#contact'],
+  ['Services', '/services'],
+  ['Pricing',  '/pricing'],
+  ['About',    '/about'],
+  ['Contact',  '/contact'],
 ]
 
 export default function Nav() {
@@ -52,7 +52,7 @@ export default function Nav() {
           {/* Desktop CTA */}
           <div className="nav-desktop-cta" style={{ display: 'flex', alignItems: 'center', gap: '18px' }}>
             <a href="tel:+13039497775" style={{ fontSize: '14px', fontWeight: 700, color: 'var(--ink)' }}>(303) 949-7775</a>
-            <a href="#contact" className="btn btn-navy">Book a Visit</a>
+            <Link href="/contact" className="btn btn-navy">Book a Visit</Link>
           </div>
 
           {/* Hamburger */}
@@ -103,7 +103,7 @@ export default function Nav() {
         ))}
         <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           <a href="tel:+13039497775" style={{ fontSize: '15px', fontWeight: 700, color: 'var(--navy)' }}>(303) 949-7775</a>
-          <a href="#contact" onClick={close} className="btn btn-navy" style={{ justifyContent: 'center' }}>Book a Visit</a>
+          <Link href="/contact" onClick={close} className="btn btn-navy" style={{ justifyContent: 'center' }}>Book a Visit</Link>
         </div>
       </div>
     </>
