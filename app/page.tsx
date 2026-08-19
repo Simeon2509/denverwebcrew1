@@ -221,13 +221,9 @@ export default function Home() {
       {/* ABOUT */}
       <section style={{ padding: '88px 0', background: 'var(--white)' }} id="about">
         <div className="wrap why-grid">
-          <div style={{
-            aspectRatio: '4/3', borderRadius: '20px', overflow: 'hidden',
-            background: 'linear-gradient(150deg, var(--sky) 0%, var(--sky-deep) 60%, var(--navy) 100%)',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: 'rgba(255,255,255,.4)', fontSize: '13px', fontWeight: 600, boxShadow: 'var(--shadow)',
-          }}>
-            Add a photo of yourself here
+          <div style={{ aspectRatio: '4/3', borderRadius: '20px', overflow: 'hidden', boxShadow: 'var(--shadow)' }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/kling_20260819_IMAGE_Realistic__3156_0.png" alt="Denver Web Crew workspace" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
           </div>
           <div>
             <div className="eyebrow">Who We Are</div>
