@@ -93,14 +93,9 @@ export default function Home() {
             background: 'rgba(255,255,255,.06)', border: '1px solid rgba(255,255,255,.14)',
             borderRadius: '20px', padding: '28px', backdropFilter: 'blur(6px)',
           }}>
-            <div style={{
-              aspectRatio: '4/3', borderRadius: '14px',
-              background: 'linear-gradient(160deg,#2b4a72,#16283f 70%)',
-              display: 'flex', alignItems: 'center', justifyContent: 'center',
-              color: '#8fa6c4', fontSize: '13px', fontWeight: 600,
-              border: '1px dashed rgba(255,255,255,.25)', textAlign: 'center', padding: '20px',
-            }}>
-              📸 Real photos of your business<br />shot on-site by us
+            <div style={{ aspectRatio: '4/3', borderRadius: '14px', overflow: 'hidden' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/hero-image2.jpg" alt="Denver business website example" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
             </div>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: '16px', fontSize: '13px', color: '#a9b9cf' }}>
               <span>Storefront &amp; interior shoot</span>
