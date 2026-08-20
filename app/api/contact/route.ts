@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
 
     const resend = new Resend(apiKey);
     const { error } = await resend.emails.send({
-      from: `${BUSINESS_NAME} Website <onboarding@resend.dev>`,
+      from: `${BUSINESS_NAME} Website <notifications@denverwebcrew.com>`,
       to: TO_EMAIL,
       replyTo: email,
       subject: `New site visit request from ${business}`,
