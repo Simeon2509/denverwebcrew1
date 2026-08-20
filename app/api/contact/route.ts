@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
 const BUSINESS_NAME = "Denver Web Crew";
-const TO_EMAIL = "hello@denverwebcrew.com";
+const TO_EMAIL = "denverwebcrew@gmail.com";
 
 function escapeHtml(value: string) {
   return value

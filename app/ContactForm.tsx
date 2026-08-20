@@ -77,7 +77,7 @@ export default function ContactForm() {
       </button>
       {status === 'error' && (
         <p style={{ color: '#cc3300', fontSize: '13px', marginTop: '8px', textAlign: 'center' }}>
-          Something went wrong. Please email us directly at hello@denverwebcrew.com
+          Something went wrong. Please email us directly at denverwebcrew@gmail.com
         </p>
       )}
     </form>
